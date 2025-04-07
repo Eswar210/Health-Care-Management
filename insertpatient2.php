@@ -5,7 +5,7 @@
 	<title> Patient Information </title>
 </head>
 <style>body {
-  background-image: url('background_pat.jpg');
+  background-image: url('images/background_pat.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

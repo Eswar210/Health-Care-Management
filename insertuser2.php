@@ -5,7 +5,7 @@
 	<title>Staff </title>
 </head>
 <style>body {
-  background-image: url('background_staff.jpg');
+  background-image: url('images/background_staff.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

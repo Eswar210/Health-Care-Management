@@ -5,7 +5,7 @@
 	<title>Appointment created </title>
 </head>
 <style>body {
-  background-image: url('background_appoi.jpg');
+  background-image: url('images/background_appoi.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

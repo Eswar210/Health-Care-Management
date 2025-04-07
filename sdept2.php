@@ -4,7 +4,7 @@
 <style>
 
 body {
-  background-image: url('search_doc.jpg');
+  background-image: url('images/search_doc.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);

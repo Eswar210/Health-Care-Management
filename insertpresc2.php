@@ -5,7 +5,7 @@
 	<title>Prescription </title>
 </head>
 <style>body {
-  background-image: url('background_pres.jpg');
+  background-image: url('images/background_pres.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

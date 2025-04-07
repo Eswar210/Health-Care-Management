@@ -13,7 +13,7 @@
             padding: 20px;
             text-align: center;
         }
-        body{background-image: url('b4.jpg');background-size: cover;}
+        body{background-image: url('images/b4.jpg');background-size: cover;}
         h1 {
             margin: 0;
         }

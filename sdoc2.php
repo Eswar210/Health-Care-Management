@@ -3,7 +3,7 @@
 <head>
 <style>
 body {
-  background-image: url('oo.jpg');
+  background-image: url('images/oo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

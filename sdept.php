@@ -7,7 +7,7 @@
 </head>
 <style>
   body {
-  background-image: url('search_doc.jpg');
+  background-image: url('images/search_doc.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

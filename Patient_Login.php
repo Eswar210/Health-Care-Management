@@ -13,7 +13,7 @@
             padding: 20px;
             text-align: center;
         }
-        body{background-image: url('search_doc.jpg');background-size: cover;}
+        body{background-image: url('images/search_doc.jpg');background-size: cover;}
         h1 {
             margin: 0;
         }
