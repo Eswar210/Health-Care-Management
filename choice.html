@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>choices</title>
+</head>
+<style>
+    
+body{
+    overflow: hidden;
+    background-color: #cdedfd;
+    background-image: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    animation-name: background-change;
+    animation-iteration-count:infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    background-size: 400%;
+    background-attachment: fixed;
+    
+}
+@keyframes background-change{
+   0%{
+       background-position: 0% 50%;
+   }
+   50%{
+       background-position: 100% 50%;
+   }
+   100%{
+       background-position: 0% 50%;
+   }
+}
+
+h1 {
+    text-align: center;
+    color: #0ef33c;
+    font-size: 2rem;
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 2px;
+    margin: 8px 10px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 70%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+<body>
+    <h1>Welcome, <span id="name"></span>!</h1>
+    <div class="page-container">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('name').textContent = name;
+        </script>
+        <h2>You can search for : </h2>
+        <a href="sdoc.php" class="button">Doctor</a> 
+        <a href="sdept.php" class="button">Department</a>
+        <a href="spat.php" class="button">Patient</a>
+        <a href="sprescrip.php" class="button">Prescription</a>
+
+        <h2>DISPLAY</h2>
+        <a href="Admins_info.php" class="button">Admins Information</a>
+        <a href="patient_info.php" class="button">Patient Information</a>
+        <a href="doctor_info.php" class="button">Doctor Information</a>
+        <a href="appointment_info.php" class="button">Appointments</a>
+        <a href="prescription.php" class="button">Prescription</a>
+
+        <h2>INSERT</h2>
+        <a href="insertdoctorinfo.php" class="button">New Doctor</a>
+        <a href="insertuser.php" class="button">New Staff</a>
+        <a href="insertappoi.php" class="button">New Appointment</a>
+        <a href="insertpatient.php" class="button">New Patient</a>
+        <a href="insertpresc.php" class="button">New Prescription</a>
+    </div>
+</body>
+</html>

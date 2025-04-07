@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>displaying</title>
+</head>
+<style>
+  
+    body {
+        background-image: url("background_display.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: fit-content;
+        height: fit-content;
+        
+    }
+   
+.button {
+  border-radius: 4px;
+  background-color: rgba(212, 192, 192, 0.8);
+  box-shadow: 0 5px 10px rgb(15, 14, 11);
+  border: none;
+  
+  text-align: center;
+  font-size: 28px;
+  padding: 3px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h2{
+
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgb(226, 226, 226);
+  text-align: center;
+  margin-top: 80px;
+  
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: 230px;
+  margin-top: 90px;
+
+  
+}
+table td, table tr {
+ 
+  padding: 20px;
+  text-align: center;
+  
+}
+
+
+</style>
+
+<body>
+    <h2 style="text-align: center;">which should be displayed?</h2>
+            <div class="content">
+              <div class="selection">
+                <table>
+                  <td><button class="button"><span><a href="Admins_info.php" style="font-size: 18px;color: rgb(207, 29, 29);">Admins_information</a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><button class="button"><span><a href="patient_info.php" style="font-size: 18px;color: rgb(207, 29, 29);">Patient_information</a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><button class="button"><span><a href="doctor_info.php" style="font-size: 18px;color: rgb(207, 29, 29);">Doctor_information</a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  </tr>
+                  <td><button class="button"><span><a href="appointment_info.php" style="font-size: 18px;color: rgb(207, 29, 29);">Appointments</a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td><button class="button"><span><a href="prescription.php" style="font-size: 18px;color: rgb(207, 29, 29);">prescription</a></span></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>        
+                  </table>
+                  </div>
+            </div>
+</body>
+
+</html>
